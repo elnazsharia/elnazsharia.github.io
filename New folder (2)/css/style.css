@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+/*-----------------
+      body
+  ------------------*/
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  font-family: "Gruppo", cursive;
+}
+.bottom-content {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.first-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-----------------
+      main-container
+  ------------------*/
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+/*left side of the container*/
+.flex-left {
+  width: 70%;
+}
+/*-right side of the container-*/
+.flex-right {
+  height: 100%;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*-----------------
+      Form login
+  ------------------*/
+.Form {
+  position: relative;
+  width: 85%;
+  color: rgb(247, 247, 247);
+  margin-bottom: 30px;
+}
+/*--right-header--*/
+.Form h1 {
+  position: relative;
+  color: rgb(238, 238, 238);
+  font-weight: 100;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+/*--------
+  ------Form inputs-----*/
+.Form input[type="text"],
+input[type="password"],
+[type="email"] {
+  width: 100%;
+  padding: 5px 0;
+  margin-top: 3px;
+  margin-bottom: 22px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: inherit;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.Form input[type="checkbox"] {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
+.Form button {
+  position: relative;
+  padding: 12px 42px;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: rgb(252, 42, 42);
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #fff;
+}
+.Form button:hover {
+  background-color: #fff;
+  color: rgb(252, 42, 42);
+}
+
+/*Terms and policies*/
+.txt-agree {
+  color: #df8c8cdc;
+  font-size: 17px;
+}
+.terms {
+  color: #ccc;
+}
+.terms:hover {
+  color: rgb(60, 60, 255);
+}
+
+.txt2 {
+  color: #df8c8cdc;
+  position: relative;
+
+  top: 0px;
+}
+.txt2:hover {
+  color: rgb(60, 60, 255);
+}
+.flex-left h1 {
+  color: #fff;
+  font-family: 'PT Mono', monospace;
+  font-size: 18px;
+    letter-spacing: 2px;
+  margin: 150px 0 90px 90px;
+}
+
+.acount-text {
+  color: white;
+  font-size:55px;
+  width: 350px;
+  margin: 150px 0 10px 90px;
+  
+}
+.bottom-text {
+  color: #cecece;
+  font-size: 14px;
+  width: 400px;
+  margin-left: 90px;
+
+}
+
+div .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+p .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+#arrow-right {
+  border: solid rgb(109, 109, 109);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  padding: 3px;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.flex-left ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  list-style-type: none;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+.flex-left ul li a {
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 24px;
+}
+.flex-left ul .social-media a {
+  text-decoration: none;
+}
+.flex-left .social-media li a:hover {
+  color: rgb(60, 60, 255);
+}
+
+.flex-right ul .social-media {
+  display: none;
+}
+.Sign-btn{
+  display: flex;
+   align-items: center; 
+   justify-content: space-between;
+  margin-top: 20px
+}
+
+@media only screen and (max-width: 750px) {
+  body{
+      height: 145vh;
+  }
+  .flex-container {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-right {
+    width: 80%;
+    height: 70vh;
+    padding-top: 350px;
+    padding-bottom: 10px;
+  }
+  
+
+  .flex-left h1 {
+    display: none;
+  }
+
+  .Form {
+    position: relative;
+    width: 70%;
+    padding: 15px;
+    padding-left: 0px;
+    margin: 40px;
+  }
+  .Form h1 {
+    padding-bottom: 45px;
+    font-size: 35px;
+  }
+  .Form input[type="text"],
+  input[type="password"],
+  [type="email"] {
+    padding: 5px 0;
+    margin-bottom: 38px;
+    color: rgba(250, 235, 215, 0.658);
+
+    font-size: 12px;
+  }
+  .Form input[type="checkbox"] {
+    margin: 2px;
+  }
+  .Form button {
+    padding: 4px 16px;
+    letter-spacing: 0px;
+    font-size: 12px;
+  }
+
+  #arrow-right {
+    display: none;
+  }
+  .flex-left {
+    width: 80%;
+  }
+  .acount-text {
+    font-size: 18px;
+   margin:90px 0 0px 0px;
+   width: 250px;
+   font-size: 38px;
+  }
+  .bottom-text{
+      margin: 30px 0 0 0;
+      width: 200px;
+
+  }
+  .first-left{
+      margin-top: 30px;
+  }
+  .flex-left ul{
+      margin-left: 0;
+      width: 50%;
+      margin-bottom: 20px;
+  }
+}
