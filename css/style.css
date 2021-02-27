@@ -222,6 +222,12 @@ p .bottom {
 .flex-right ul .social-media {
   display: none;
 }
+.Sign-btn{
+  display: flex;
+   align-items: center; 
+   justify-content: space-between;
+  margin-top: 20px
+}
 
 @media only screen and (max-width: 750px) {
   body{
